@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>parkingApp</title>
+    <link href="assets/img/coche.png" rel="icon">
+    <link rel="stylesheet" href="assets/css/tailwind.min.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+
+</head>
+
+<body class="min-h-100 bg-gray-200">
+
+  
+    <div class="md:flex min-h-screen md:align-top">
+        <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 px-5 py-10 aside">
+            <h1 class="uppercase text-white tracking-wide text-4xl  font-bold mt-2">parkingApp</h1>
+           
+            <nav class="mt-8">
+                <a  
+                    href="home.html" 
+                    class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-blue-400  text-3xl"
+                >Mis Estacionamientos</a>
+                <a 
+                    href="nuevoEstacionamiento.html" 
+                    class="px-3 py-1 text-white block hover:bg-blue-900 mt-2 hover:text-yellow-400 text-3xl"
+                >Nuevo Estacionamiento</a>
+
+                <a 
+                href="buscar.html" 
+                class="px-3 py-1 text-white block hover:bg-blue-900 mt-2 hover:text-yellow-400 text-3xl"
+            >Buscar</a>
+
+                <a 
+                href="index.html" 
+                class="px-3 py-1 text-white block hover:bg-blue-900 mt-2 hover:text-blue-400 text-3xl"
+            >Salir</a>
+            </nav>
+        </aside> <!--sidebar-->
+        <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gray-200">
+            
+
+            
+
+            <h2 class="text-4xl font-light text-center">Estacionamientos</h2>
+
+            <div class="flex flex-col mt-10">
+                <div class="py-2 overflow-x-auto">
+                  <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200 ">
+                    <table class="min-w-full">
+                        <thead class="bg-gray-100 ">
+                            <tr>
+                                <th class="px-6 py-3 border-b border-gray-200 text-2xl text-left  leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Nombre 
+                                </th>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-2xl leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Teléfono
+                                </th>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-2xl leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Direccion
+                                </th>
+                                <th class="px-6 py-3 border-b border-gray-200  text-left text-2xl leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        Acciones
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="listado-estacionamientos" class="bg-white"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+        </main>
+    </div>
+    <script src="assets/js/funciones.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
